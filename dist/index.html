@@ -15,8 +15,30 @@
 		<h1>Welcome to Your Personal Carbon Trigger!</h1>
 	</div>
 	<!--form area-->
+	<!-- This form shows where your saved info will be input then stored in local storage -->
+	<form class="form-data" autocomplete="on">
+		<div>
+			<h2>New? Add your information</h2>
+		</div>
+		<div>
+			<label for="region">Region Name</label>
+			<input type="text" id="region" required class="region-name" />
+		</div>
+		<button class="search-btn">Submit</button>
+	</form>
 
 	<!--result area-->
+	<div class="result">
+		<div class="loading">loading...</div>
+		<div class="errors"></div>
+		<div class="data"></div>
+		<div class="result-container">
+			<p><strong>Region: </strong><span class="my-region"></span></p>
+			<p><strong>Carbon Usage: </strong><span class="caron-usage"></span></p>
+			<p><strong>Fossil Fuel Percentage: </strong><span class="fossil-fuel"></span></p>
+		</div>
+		<button class="clear-btn">Change Region</button>
+	</div>
 
 	<script src="main.js"></script>
 </body>
